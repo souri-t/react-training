@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import PageA from '../Pages/PageA'
-import PageB from '../Pages/PageB'
-import Home from '../Pages/Home'
+import PageA from '../Pages/public/PageA'
+import PageB from '../Pages/public/PageB'
+import Home from '../Pages/public/Home'
 
 export default function RouteComponent() {
     const location = useLocation();
