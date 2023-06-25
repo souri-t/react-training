@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 import PageA from '../Pages/public/PageA'
 import PageB from '../Pages/public/PageB'
 import Home from '../Pages/public/Home'
 
 export default function Content2() {
-  const isAuth = true;
+
+  const [isAuth, setIsAuth] = useState(false);
+  
+  const [count, setCount] = useState(0);
+  
+  //Reactのステートとして管理し、ボタンのクリックイベントなどによって値を更新する
+  const handleButtonClick = () => {
+    setCount(count + 1);
+  };
+
+  // setIsAuth(cognitoUser == null);
+  // const isAuth = true;
   // const routes = isAuth ? protectedRoutes : publicRoutes;
   const routes = isAuth ? <AppRouter /> : <AppRouter2 />;
 
