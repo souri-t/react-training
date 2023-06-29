@@ -4,12 +4,12 @@ import { AppBar, Toolbar, styled } from '@mui/material';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
 
 const CustomRoot = styled('div')({
-  backgroundColor: '#e0e0e0',
-  height: '100vh',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
+  // backgroundColor: '#e0e0e0',
+  // // height: '100vh',
+  // display: 'flex',
+  // flexDirection: 'column',
+  // justifyContent: 'center',
+  // alignItems: 'center',
 });
 const CustomRow = styled('div')({
   display: 'flex',
@@ -52,13 +52,13 @@ const TestPage: React.FC = () => {
 
   return (
     <CustomRoot>
-      <CustomAppBar position="static">
+      {/* <CustomAppBar position="static">
         <Toolbar>
           <Button color="inherit">Menu 1</Button>
           <Button color="inherit">Menu 2</Button>
           <Button color="inherit">Menu 3</Button>
         </Toolbar>
-      </CustomAppBar>
+      </CustomAppBar> */}
       <CustomRow>
         <IconButton title='test1'>
           <AccessAlarmIcon style={{ fontSize: '4rem' }} />

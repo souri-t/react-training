@@ -9,6 +9,7 @@ import TestPage from './Pages/public/TestPage';
 import CarenderPage from './Pages/public/CarenderPage';
 import TimelinePage from './Pages/public/TimelinePage';
 import BigCalendarPage from './Pages/public/BigCalendarPage';
+import Layout from './Pages/public/Layout';
 
 // interface ContentProps {
 //   content: string;
@@ -21,14 +22,17 @@ import BigCalendarPage from './Pages/public/BigCalendarPage';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/cal" element={<CarenderPage />} />
-          <Route path="/time" element={<TimelinePage />} />
-          <Route path="/" element={<BigCalendarPage />} />
-          <Route path="/test" element={<TestPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Layout>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/cal" element={<CarenderPage />} />
+            <Route path="/time" element={<TimelinePage />} />
+            <Route path="/" element={<BigCalendarPage />} />
+            <Route path="/test" element={<TestPage />} />
+            {/* <Route path="/layout" element={<LayoutPage />} /> */}
+          </Routes>
+        </BrowserRouter>
+      </Layout>
     </div>
   );
 }

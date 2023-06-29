@@ -9,15 +9,15 @@ const eventList = [
     id: 0,
     title: 'All Day Event very long title',
     allDay: true,
-    start: new Date('2020-03-01'),
-    end: new Date('2020-03-01'),
+    start: new Date('2023-06-01'),
+    end: new Date('2023-06-01'),
   },
   {
     id: 1,
     title: 'Long Event',
     allDay: false,
-    start: new Date('2020-03-07 15:00'),
-    end: new Date('2020-03-07 17:00'),
+    start: new Date('2023-06-25T15:00:00'),
+    end: new Date('2023-06-25T17:00:00'),
   }
 ];
 
