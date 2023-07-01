@@ -25,9 +25,9 @@ function App() {
       <Layout>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<BigCalendarPage />} />
             <Route path="/cal" element={<CarenderPage />} />
             <Route path="/time" element={<TimelinePage />} />
-            <Route path="/" element={<BigCalendarPage />} />
             <Route path="/test" element={<TestPage />} />
             {/* <Route path="/layout" element={<LayoutPage />} /> */}
           </Routes>

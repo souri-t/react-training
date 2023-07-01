@@ -18,6 +18,13 @@ const eventList = [
     allDay: false,
     start: new Date('2023-06-25T15:00:00'),
     end: new Date('2023-06-25T17:00:00'),
+  },
+  {
+    id: 2,
+    title: 'Event',
+    allDay: false,
+    start: new Date('2023-07-01T02:00:00'),
+    end: new Date('2023-07-01T04:00:00'),
   }
 ];
 
@@ -28,6 +35,7 @@ const BigCalendarPage = () => {
       <Calendar
         localizer={localizer}
         events={eventList}
+        views={['week','day','month', 'agenda', 'work_week']} //未指定の場合は全て表示される
         timeslots={2}
         defaultView={Views.WEEK}
         onSelectEvent={event => alert(event.title)}

@@ -1,6 +1,8 @@
 import React from 'react'
 
-function PageB() {
+interface Props {}
+
+function PageB(props: Props) {
   return (
     <div>PageB</div>
   )
